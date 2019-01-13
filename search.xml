@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Funcategorized%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[​ 最近几周开始接触了git和GitHub,偶然看到可以用GitHub提供的pages服务基于Hexo免费搭建个人博客，周末闲来无事就看着Hexo的官方文档自己搭了一个。虽然步骤不多，也不麻烦，但是还是碰到了许多问题，还好有万能的度娘，每当我迷失方向时总会指引我走出迷途。 ​ 下面先写一下通过Hexo创建文章时的几条常用命令，以后闲了的话会把我搭建博客配置各种东西的步骤完整的总结出来。 基本操作执行下列命令来创建一篇新文章。1$ hexo new "My New Post" More info: 写作 开启本地服务器1$ hexo server More info: Server 生成文件1$ hexo generate More info: Generating 部署1$ hexo deploy More info: Deployment 监视文件变动Hexo 能够监视文件变动并立即重新生成静态文件，在生成时会比对文件的 SHA1 checksum，只有变动的文件才会写入。 1$ hexo generate --watch 完成后部署可以执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。 12$ hexo generate --deploy$ hexo deploy --generate 简写123# 上面两个命令可以简写为$ hexo g -d$ hexo d -g]]></content>
+  </entry>
+</search>
