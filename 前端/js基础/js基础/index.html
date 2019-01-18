@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="js-常用互动方法confirm 确认框123456789var hh = function()&amp;#123;    var message = confirm(&quot;yes or no&quot;);    if(message==true)&amp;#123;        document.write(&quot;yes&quot;);    &amp;#125;else&amp;#123;        document.write(&quot;no&quot;);">
+<meta name="description" content="js-常用互动方法confirm 确认框">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js基础">
 <meta property="og:url" content="https://jiaaaaaqi.github.io/前端/js基础/js基础/index.html">
 <meta property="og:site_name" content="彼岸落笔">
-<meta property="og:description" content="js-常用互动方法confirm 确认框123456789var hh = function()&amp;#123;    var message = confirm(&quot;yes or no&quot;);    if(message==true)&amp;#123;        document.write(&quot;yes&quot;);    &amp;#125;else&amp;#123;        document.write(&quot;no&quot;);">
+<meta property="og:description" content="js-常用互动方法confirm 确认框">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-18T06:17:24.350Z">
+<meta property="og:updated_time" content="2019-01-18T06:24:29.509Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js基础">
-<meta name="twitter:description" content="js-常用互动方法confirm 确认框123456789var hh = function()&amp;#123;    var message = confirm(&quot;yes or no&quot;);    if(message==true)&amp;#123;        document.write(&quot;yes&quot;);    &amp;#125;else&amp;#123;        document.write(&quot;no&quot;);">
+<meta name="twitter:description" content="js-常用互动方法confirm 确认框">
 
 
 
@@ -456,7 +456,8 @@
       
 
       
-        <h1 id="js-常用互动方法"><a href="#js-常用互动方法" class="headerlink" title="js-常用互动方法"></a>js-常用互动方法</h1><h2 id="confirm-确认框"><a href="#confirm-确认框" class="headerlink" title="confirm 确认框"></a>confirm 确认框</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> hh = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> message = confirm(<span class="string">"yes or no"</span>);</span><br><span class="line">    <span class="keyword">if</span>(message==<span class="literal">true</span>)&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"yes"</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"no"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">hh();</span><br></pre></td></tr></table></figure>
+        <h1 id="js-常用互动方法"><a href="#js-常用互动方法" class="headerlink" title="js-常用互动方法"></a>js-常用互动方法</h1><h2 id="confirm-确认框"><a href="#confirm-确认框" class="headerlink" title="confirm 确认框"></a>confirm 确认框</h2><a id="more"></a>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> hh = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> message = confirm(<span class="string">"yes or no"</span>);</span><br><span class="line">    <span class="keyword">if</span>(message==<span class="literal">true</span>)&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"yes"</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"no"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">hh();</span><br></pre></td></tr></table></figure>
 <h2 id="prompt消息对话框"><a href="#prompt消息对话框" class="headerlink" title="prompt消息对话框"></a>prompt消息对话框</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> hh = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name = prompt(<span class="string">"请输入你的名字"</span>,<span class="string">"jiaqi"</span>);<span class="comment">//第二个参数是输入框中的默认值，可以不写</span></span><br><span class="line">    <span class="keyword">if</span>(name!=<span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"你好"</span>+name);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"请输入名字"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">hh();</span><br></pre></td></tr></table></figure>
 <h2 id="打开新窗口（window-open）"><a href="#打开新窗口（window-open）" class="headerlink" title="打开新窗口（window.open）"></a>打开新窗口（window.open）</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.open([url],[窗口名称],[参数字符串]);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">URL：可选参数，在窗口中要显示网页的网址或路径。如果省略这个参数，或者它的值是空字符串，那么窗口就不显示任何文档。</span></span><br><span class="line"><span class="comment">窗口名称：可选参数，被打开窗口的名称。</span></span><br><span class="line"><span class="comment">    1.该名称由字母、数字和下划线字符组成。</span></span><br><span class="line"><span class="comment">    2."_top"、"_blank"、"_self"具有特殊意义的名称。</span></span><br><span class="line"><span class="comment">       _blank：在新窗口显示目标网页</span></span><br><span class="line"><span class="comment">       _self：在当前窗口显示目标网页</span></span><br><span class="line"><span class="comment">       _top：框架网页中在上部窗口中显示目标网页</span></span><br><span class="line"><span class="comment">    3.相同 name 的窗口只能创建一个，要想创建多个窗口则 name 不能相同。</span></span><br><span class="line"><span class="comment">   4.name 不能包含有空格。</span></span><br><span class="line"><span class="comment">参数字符串：可选参数，设置窗口参数，各参数用逗号隔开。*/</span></span><br></pre></td></tr></table></figure>
 <h3 id="参数表"><a href="#参数表" class="headerlink" title="参数表"></a>参数表</h3><table>
@@ -645,7 +646,7 @@
   <p><span>本文标题:</span><a href="/前端/js基础/js基础/">js基础</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 jiaqi 的个人博客">jiaqi</a></p>
   <p><span>发布时间:</span>2019年01月18日 - 14:13</p>
-  <p><span>最后更新:</span>2019年01月18日 - 14:17</p>
+  <p><span>最后更新:</span>2019年01月18日 - 14:24</p>
   <p><span>原始链接:</span><a href="/前端/js基础/js基础/" title="js基础">https://jiaaaaaqi.github.io/前端/js基础/js基础/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiaaaaaqi.github.io/前端/js基础/js基础/" aria-label="复制成功！"></i></span>
   </p>
