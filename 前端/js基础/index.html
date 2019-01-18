@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="node,">
+  <meta name="keywords" content="javascript,">
 
 
 
@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="Node.js简介Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。">
-<meta name="keywords" content="node">
+<meta name="description" content="js-常用互动方法confirm 确认框">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node学习笔记-day1">
-<meta property="og:url" content="https://jiaaaaaqi.github.io/前端/node学习笔记-day1/index.html">
+<meta property="og:title" content="js基础">
+<meta property="og:url" content="https://jiaaaaaqi.github.io/前端/js基础/index.html">
 <meta property="og:site_name" content="彼岸落笔">
-<meta property="og:description" content="Node.js简介Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。">
+<meta property="og:description" content="js-常用互动方法confirm 确认框">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-14T14:24:50.145Z">
+<meta property="og:updated_time" content="2019-01-18T06:24:29.509Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node学习笔记-day1">
-<meta name="twitter:description" content="Node.js简介Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。">
+<meta name="twitter:title" content="js基础">
+<meta name="twitter:description" content="js-常用互动方法confirm 确认框">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://jiaaaaaqi.github.io/前端/node学习笔记-day1/">
+  <link rel="canonical" href="https://jiaaaaaqi.github.io/前端/js基础/">
 
 
 
 
 
-  <title>node学习笔记-day1 | 彼岸落笔</title>
+  <title>js基础 | 彼岸落笔</title>
   
 
 
@@ -314,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jiaaaaaqi.github.io/前端/node学习笔记-day1/">
+    <link itemprop="mainEntityOfPage" href="https://jiaaaaaqi.github.io/前端/js基础/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="jiaqi">
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">node学习笔记-day1</h1>
+          <h1 class="post-title" itemprop="name headline">js基础</h1>
         
 
         <div class="post-meta">
@@ -343,8 +343,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-14T19:48:11+08:00">
-                2019-01-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-18T14:13:43+08:00">
+                2019-01-18
               </time>
             
 
@@ -384,8 +384,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/前端/node学习笔记-day1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/前端/node学习笔记-day1/" itemprop="commentCount"></span>
+                <a href="/前端/js基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/前端/js基础/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -393,7 +393,7 @@
 
           
           
-             <span id="/前端/node学习笔记-day1/" class="leancloud_visitors" data-flag-title="node学习笔记-day1">
+             <span id="/前端/js基础/" class="leancloud_visitors" data-flag-title="js基础">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -419,7 +419,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.3k
+                  1.6k
                 </span>
               
 
@@ -435,7 +435,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  7
                 </span>
               
             </div>
@@ -456,46 +456,142 @@
       
 
       
-        <h1 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。<br>Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。 <a id="more"></a> </p>
-<h2 id="node适合用来做什么"><a href="#node适合用来做什么" class="headerlink" title="node适合用来做什么"></a>node适合用来做什么</h2><p>Node.js 可以解析JS代码（没有浏览器安全级别的限制）提供很多系统级别的API，如：</p>
-<ul>
-<li>文件的读写</li>
-<li>进程的管理</li>
-<li>网络通信</li>
-<li>……</li>
-</ul>
-<h2 id="启用服务器"><a href="#启用服务器" class="headerlink" title="启用服务器"></a>启用服务器</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引包</span></span><br><span class="line"><span class="keyword">let</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="comment">//创建服务器，参数是一个回调函数，表示如果有请求进来，要做什么</span></span><br><span class="line"><span class="keyword">let</span> server = http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//req表示请求,request;res表示响应,response</span></span><br><span class="line">    <span class="comment">//设置Http头部，状态码是200，文件类型是html，字符集是utf8</span></span><br><span class="line">    res.writeHead(<span class="number">200</span>, &#123;<span class="string">"Content-type"</span>: <span class="string">"text/html;charset=UTF-8"</span>&#125;);</span><br><span class="line">    res.end(<span class="string">"hello,node"</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//运行服务器，监听3000端口（端口号可以任意更改）</span></span><br><span class="line">server.listen(<span class="number">80</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><ol>
-<li>如果想修改程序，必须中断当前运行的服务器，重新node一次，刷新，才行。</li>
-<li>Node.js是服务器的程序，写的js语句，都将运行在服务器上。返回给客户的，都是已经处理好的纯html。</li>
-<li>ctrl+c，就可以打断挂起的服务器程序。此时按上箭头，能够快速调用最近的node命令</li>
-<li>cls可以清屏</li>
-<li>我们本地写一个js，不能直接拖入浏览器运行，但是有了node，我们任何一个js文件，都可以通过node来运行。也就是说，node就是一个js的执行环境。</li>
-<li>我们现在，要跑起来一个服务器，要以.js存储、用node命令运行这个js文件。</li>
+        <h1 id="js-常用互动方法"><a href="#js-常用互动方法" class="headerlink" title="js-常用互动方法"></a>js-常用互动方法</h1><h2 id="confirm-确认框"><a href="#confirm-确认框" class="headerlink" title="confirm 确认框"></a>confirm 确认框</h2><a id="more"></a>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> hh = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> message = confirm(<span class="string">"yes or no"</span>);</span><br><span class="line">    <span class="keyword">if</span>(message==<span class="literal">true</span>)&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"yes"</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"no"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">hh();</span><br></pre></td></tr></table></figure>
+<h2 id="prompt消息对话框"><a href="#prompt消息对话框" class="headerlink" title="prompt消息对话框"></a>prompt消息对话框</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> hh = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name = prompt(<span class="string">"请输入你的名字"</span>,<span class="string">"jiaqi"</span>);<span class="comment">//第二个参数是输入框中的默认值，可以不写</span></span><br><span class="line">    <span class="keyword">if</span>(name!=<span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"你好"</span>+name);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="string">"请输入名字"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">hh();</span><br></pre></td></tr></table></figure>
+<h2 id="打开新窗口（window-open）"><a href="#打开新窗口（window-open）" class="headerlink" title="打开新窗口（window.open）"></a>打开新窗口（window.open）</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.open([url],[窗口名称],[参数字符串]);</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">URL：可选参数，在窗口中要显示网页的网址或路径。如果省略这个参数，或者它的值是空字符串，那么窗口就不显示任何文档。</span></span><br><span class="line"><span class="comment">窗口名称：可选参数，被打开窗口的名称。</span></span><br><span class="line"><span class="comment">    1.该名称由字母、数字和下划线字符组成。</span></span><br><span class="line"><span class="comment">    2."_top"、"_blank"、"_self"具有特殊意义的名称。</span></span><br><span class="line"><span class="comment">       _blank：在新窗口显示目标网页</span></span><br><span class="line"><span class="comment">       _self：在当前窗口显示目标网页</span></span><br><span class="line"><span class="comment">       _top：框架网页中在上部窗口中显示目标网页</span></span><br><span class="line"><span class="comment">    3.相同 name 的窗口只能创建一个，要想创建多个窗口则 name 不能相同。</span></span><br><span class="line"><span class="comment">   4.name 不能包含有空格。</span></span><br><span class="line"><span class="comment">参数字符串：可选参数，设置窗口参数，各参数用逗号隔开。*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="参数表"><a href="#参数表" class="headerlink" title="参数表"></a>参数表</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">top</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">窗口顶部离开屏幕顶部的像素数</td>
+</tr>
+<tr>
+<td style="text-align:center">left</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">窗口左端离开屏幕的像素数</td>
+</tr>
+<tr>
+<td style="text-align:center">width</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">窗口的宽度</td>
+</tr>
+<tr>
+<td style="text-align:center">height</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">窗口的高度</td>
+</tr>
+<tr>
+<td style="text-align:center">menubar</td>
+<td style="text-align:center">yes,no</td>
+<td style="text-align:center">窗口有没有菜单</td>
+</tr>
+<tr>
+<td style="text-align:center">toolbar</td>
+<td style="text-align:center">yes,no</td>
+<td style="text-align:center">窗口有没有工具条</td>
+</tr>
+<tr>
+<td style="text-align:center">scrollbar</td>
+<td style="text-align:center">yes,no</td>
+<td style="text-align:center">窗口有没有滚动条</td>
+</tr>
+<tr>
+<td style="text-align:center">status</td>
+<td style="text-align:center">yes,no</td>
+<td style="text-align:center">窗口有没有状态栏</td>
+</tr>
+</tbody>
+</table>
+<h2 id="关闭新窗口（window-close）"><a href="#关闭新窗口（window-close）" class="headerlink" title="关闭新窗口（window.close）"></a>关闭新窗口（window.close）</h2><p><strong>用法</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.close(); <span class="comment">//关闭本窗口</span></span><br><span class="line">&lt;窗口对象&gt;.close();	<span class="comment">//关闭指定的窗口</span></span><br><span class="line"><span class="comment">//例</span></span><br><span class="line"><span class="keyword">var</span> myWin = <span class="built_in">window</span>.open(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">myWin.close();</span><br></pre></td></tr></table></figure>
+<h2 id="综合练习"><a href="#综合练习" class="headerlink" title="综合练习"></a>综合练习</h2><blockquote>
+<h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><p>1、新窗口打开时弹出确认框，是否打开</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> 提示: 使用 <span class="keyword">if</span> 判断确认框是否点击了确定，如点击弹出输入对话框，否则没有任何操作。</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"></span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>2、通过输入对话框，确定打开的网址，默认为 http：//<a href="http://www.imooc.com/" target="_blank" rel="noopener">www.imooc.com/</a></p>
+<p>3、打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openWindow</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (confirm(<span class="string">"确认打开新窗口？"</span>)) &#123;</span><br><span class="line">        <span class="keyword">var</span> url = prompt(<span class="string">"请输入要打开的网址"</span>, <span class="string">"http://www.imooc.com"</span>);</span><br><span class="line">        <span class="keyword">if</span> (url != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="built_in">window</span>.open(url,<span class="string">"_blank"</span>,<span class="string">"width=400,height=500,menubar=no,toolbar=no"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; url = prompt(<span class="string">"请重新输入网址"</span>); &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>html部分</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"openWindow()"</span>&gt;</span>打开新窗口<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="js-DOM操作"><a href="#js-DOM操作" class="headerlink" title="js-DOM操作"></a>js-DOM操作</h1><h2 id="什么是DOM"><a href="#什么是DOM" class="headerlink" title="什么是DOM"></a>什么是DOM</h2><hr>
+<blockquote>
+<p>文档对象模型DOM（Document Object Model）定义访问和处理HTML文档的标准方法。DOM 将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。</p>
+</blockquote>
+<p>HTML文档可以说是由节点构成的集合，三种常见的DOM节点</p>
+<ol>
+<li><strong>元素节点</strong>：<html>、<body>、<p>等</p><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body></html></li>
+<li><strong>文本节点</strong>：向用户展示的内容，如</li><li>…</li>中的JavaScript、DOM、CSS等文本。
+<li><strong>属性节点</strong>：元素属性，如<a>标签的链接属性href=”<a href="http://www.baidu.com&quot;" target="_blank" rel="noopener">http://www.baidu.com&quot;</a></a></li>
 </ol>
-<h2 id="node没有文件夹的概念"><a href="#node没有文件夹的概念" class="headerlink" title="node没有文件夹的概念"></a>node没有文件夹的概念</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// require表示引包，意思是引用自己的一个功能</span></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"><span class="comment">// 创建服务器，参数是一个回调函数，表示如果有请求进来，要做什么</span></span><br><span class="line"><span class="keyword">var</span> server = http.createServer(<span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(req.url == <span class="string">"/fang"</span>)&#123;</span><br><span class="line">        fs.readFile(<span class="string">"./test/xixi.html"</span>,<span class="function"><span class="keyword">function</span> (<span class="params">err,data</span>) </span>&#123;</span><br><span class="line">            <span class="comment">//req表示请求，request;res表示响应,response</span></span><br><span class="line">            <span class="comment">//设置HTTP头部，状态码是200，文件类型是html，字符集是utf-8</span></span><br><span class="line">            res.writeHead(<span class="number">200</span>,&#123;<span class="string">"Content-type"</span>:<span class="string">"text/html;charset=UTF-8"</span>&#125;);</span><br><span class="line">            res.end(data);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        res.writeHead(<span class="number">404</span>,&#123;<span class="string">"Content-type"</span>:<span class="string">"text/html;charset=UTF-8"</span>&#125;);</span><br><span class="line">        res.end(<span class="string">"xixi,没有这个页面呦"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 运行服务器，监听3030端口（端口号可以自己随便改）</span></span><br><span class="line">server.listen(<span class="number">3030</span>,<span class="string">"127.0.0.1"</span>);</span><br></pre></td></tr></table></figure>
-<p>以上代码，运行后浏览器里的结果会是啥？</p>
-<p><strong>“xixi,没有这个页面呦”</strong></p>
-<p>原因就是在node中没有文件夹的概念</p>
-<h2 id="HTTP模块"><a href="#HTTP模块" class="headerlink" title="HTTP模块"></a>HTTP模块</h2><p>Node.js中，将很多的功能，划分为了一个个node_modules，大陆的书翻译为模块；台湾的书，翻译为模组。<br>这是因为，有一些程序需要使用fs功能（文件读取功能），有一些不用的，所以为了效率，你用什么，你就require什么。<br>官网api:<a href="http://nodejs.org/api/" target="_blank" rel="noopener">http://nodejs.org/api/</a></p>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引用模块</span></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"><span class="comment">// 创建一个服务器，回调函数表示接收到请求之后做的事情</span></span><br><span class="line"><span class="keyword">var</span> server = http.createServer(<span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//req参数表示请求，res表示响应</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"服务器接收到了请求"</span>+req.url);</span><br><span class="line">    <span class="comment">//设置头部</span></span><br><span class="line">    res.writeHead(<span class="number">200</span>,&#123;<span class="string">"Content-Type"</span>:<span class="string">"text/html;charset=UTF8"</span>&#125;);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//监听端口</span></span><br><span class="line">server.listen(<span class="number">2020</span>,<span class="string">"localhost"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ol>
-<li><p>response.end();必写，否则会认为请求没有结束</p>
+<h2 id="通过id获取元素"><a href="#通过id获取元素" class="headerlink" title="通过id获取元素"></a>通过id获取元素</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"id"</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="innerHTML属性"><a href="#innerHTML属性" class="headerlink" title="innerHTML属性"></a>innerHTML属性</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.innerHTML;</span><br></pre></td></tr></table></figure>
+<p><strong>注：</strong>Object是获取的元素对象，如通过document.getElementById(“id”)获取的元素。</p>
+<h2 id="改变HTML样式"><a href="#改变HTML样式" class="headerlink" title="改变HTML样式"></a>改变HTML样式</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.style.property = <span class="keyword">new</span> style;</span><br></pre></td></tr></table></figure>
+<h3 id="常用属性表（property）"><a href="#常用属性表（property）" class="headerlink" title="常用属性表（property）:"></a>常用属性表（property）:</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">backgroundColor</td>
+<td>背景颜色</td>
+</tr>
+<tr>
+<td style="text-align:center">height</td>
+<td>高度</td>
+</tr>
+<tr>
+<td style="text-align:center">width</td>
+<td>宽度</td>
+</tr>
+<tr>
+<td style="text-align:center">color</td>
+<td>文本颜色</td>
+</tr>
+<tr>
+<td style="text-align:center">font</td>
+<td>在一行设置所有字体属性</td>
+</tr>
+<tr>
+<td style="text-align:center">display</td>
+<td>显示或隐藏（block/none）</td>
+</tr>
+<tr>
+<td style="text-align:center">fontSize</td>
+<td>字体大小</td>
+</tr>
+</tbody>
+</table>
+<p><strong>案例</strong></p>
+<ol>
+<li><p>在下方代码块中，第12行补充代码，修改h2标签的样式，将颜色设为红色。</p>
 </li>
-<li><p>response.writeHead(200,{“Content-Type”:”text/html;charset=UTF8”});设置一个响应头 编码为utf-8</p>
+<li><p>在下方代码块中，第13行补充代码，修改h2标签的样式，将背景颜色设为灰色(#CCC)。</p>
 </li>
-<li>response.write(“”);内容必须为字符串</li>
+<li><p>在下方代码块中，第14行补充代码，修改h2标签的样式，将宽设为300px。</p>
+</li>
 </ol>
-<h2 id="URL模块"><a href="#URL模块" class="headerlink" title="URL模块"></a>URL模块</h2><ol>
-<li><code>req.url</code>属性，表示用户的请求URL地址。所有的路由设计，都是通过<code>req.url</code>来实现的。</li>
-<li>识别URL，用到两个新模块，第一个就是<code>url</code>模块，第二个就是<code>querystring</code>模块</li>
-<li>字符串查询，用<code>querystring</code>处理</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">querystring.parse(<span class="string">'foo=bar&amp;baz=qux&amp;baz=quux&amp;corge'</span>)</span><br><span class="line"><span class="comment">// returns     </span></span><br><span class="line">  &#123; </span><br><span class="line">      foo: <span class="string">'bar'</span>, </span><br><span class="line">      baz: [<span class="string">'qux'</span>, <span class="string">'quux'</span>], </span><br><span class="line">      corge: <span class="string">''</span> </span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="fs模块"><a href="#fs模块" class="headerlink" title="fs模块"></a>fs模块</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. 导入文件系统fs依赖</span></span><br><span class="line">   <span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="comment">//2. 读取</span></span><br><span class="line">   <span class="comment">// 同步读取</span></span><br><span class="line">   <span class="keyword">var</span> data = fs.readFileSync(<span class="string">'data.txt'</span>);</span><br><span class="line">   <span class="comment">// 打印出来,原生是buffer数据,需要转码</span></span><br><span class="line">   <span class="built_in">console</span>.log(data.toString());</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">'结束'</span>);</span><br><span class="line"><span class="comment">// 3.node.js的回调函数</span></span><br><span class="line"><span class="comment">// 	 node.js的异步编程的直接体现就是回调函数.</span></span><br><span class="line"><span class="comment">// 异步读取</span></span><br><span class="line"><span class="keyword">var</span> time = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">fs.readFile(<span class="string">'data.txt'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">err,data</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(data.toString());</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'读取本地文件耗时:'</span> + (<span class="keyword">new</span> <span class="built_in">Date</span>() - time)+<span class="string">'毫秒'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'完毕'</span>);</span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">readFile();</span><br><span class="line"><span class="comment">// 读取文件</span></span><br><span class="line"><span class="comment">//-&gt;fs.readFile(path,[option],callback)</span></span><br><span class="line"><span class="comment">//-&gt;callback函数有两个参数function(err,data)&#123;&#125;</span></span><br><span class="line"><span class="comment">//1).err是读取文件失败后出发的错误对象</span></span><br><span class="line"><span class="comment">//2).data是从文件中读取的数据.</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.writeFile()<span class="comment">// 写入文件</span></span><br><span class="line">-&gt;fs.writeFile(path,data,[option],callback)</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'此情此景,我想吟诗一首!'</span></span><br><span class="line">fs.writeFile(<span class="string">'data1.txt'</span>, str, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (err) &#123;	<span class="keyword">throw</span> err;   &#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'写入成功!'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//默认的第三个参数是&#123;flag='w'&#125;,是写的操作.会清空掉文件.如果想要追加内容,可以设置&#123;flag='a'&#125;</span></span><br><span class="line">fs.writeFile(<span class="string">'data1.txt'</span>, str,&#123;<span class="attr">flag</span>:<span class="string">'a'</span>&#125;, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (err) &#123;<span class="keyword">throw</span> err;&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'写入成功!'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//&#123;flag:'w'&#125;为默认值,w代表写文件,a代表追加内容</span></span><br></pre></td></tr></table></figure>
-<p>// 今天先到这吧 眼睛痛</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>style样式<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">"con"</span>&gt;</span>I love JavaScript<span class="tag">&lt;/<span class="name">H2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span> JavaScript使网页显示动态效果并实现与用户交互功能。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> mychar= <span class="built_in">document</span>.getElementById(<span class="string">"con"</span>);</span></span><br><span class="line"><span class="undefined">   	</span></span><br><span class="line"><span class="undefined">      </span></span><br><span class="line"><span class="undefined">      </span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>答案</strong>：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">con.style.color = <span class="string">"red"</span>;</span><br><span class="line">   con.style.backgroundColor = <span class="string">"#ccc"</span>;</span><br><span class="line">   con.style.width = <span class="string">"300px"</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="js改变class"><a href="#js改变class" class="headerlink" title="js改变class"></a>js改变class</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.className = <span class="string">"new className"</span>; <span class="comment">//js中的className属性对应HTML中的class属性</span></span><br></pre></td></tr></table></figure>
+<h2 id="综合实践-根据提示补全代码"><a href="#综合实践-根据提示补全代码" class="headerlink" title="综合实践-根据提示补全代码"></a>综合实践-根据提示补全代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">Content</span>=<span class="string">"text/html; charset=utf-8"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>javascript<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-tag">body</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css"><span class="selector-id">#txt</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">height</span><span class="selector-pseudo">:400px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">width</span><span class="selector-pseudo">:600px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">border</span>:<span class="selector-id">#333</span> <span class="selector-tag">solid</span> 1<span class="selector-tag">px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">padding</span><span class="selector-pseudo">:5px</span>;&#125;</span></span><br><span class="line"><span class="undefined">p&#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">line-height</span><span class="selector-pseudo">:18px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">text-indent</span><span class="selector-pseudo">:2em</span>;&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">"con"</span>&gt;</span>JavaScript课程<span class="tag">&lt;/<span class="name">H2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"txt"</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="name">h5</span>&gt;</span>JavaScript为网页添加动态效果并实现与用户交互的功能。<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>1. JavaScript入门篇，让不懂JS的你，快速了解JS。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>2. JavaScript进阶篇，让你掌握JS的基础语法、函数、数组、事件、内置对象、BOM浏览器、DOM操作。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>3. 学完以上两门基础课后，在深入学习JavaScript的变量作用域、事件、对象、运动、cookie、正则表达式、ajax等课程。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!--当点击相应按钮，执行相应操作，为按钮添加相应事件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"改变颜色"</span> &gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"改变宽高"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"隐藏内容"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"显示内容"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"取消设置"</span> &gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="actionscript"><span class="comment">//定义"改变颜色"的函数</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript"><span class="comment">//定义"改变宽高"的函数</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript"><span class="comment">//定义"隐藏内容"的函数</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript"><span class="comment">//定义"显示内容"的函数</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript"><span class="comment">//定义"取消设置"的函数</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>参考</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btns = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"input"</span>);</span><br><span class="line"><span class="keyword">var</span> txt = <span class="built_in">document</span>.getElementById(<span class="string">"txt"</span>);</span><br><span class="line"><span class="comment">//定义"改变颜色"的函数</span></span><br><span class="line">btns[<span class="number">0</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    txt.style.color = <span class="string">"#fff"</span>;</span><br><span class="line">    txt.style.backgroundColor = <span class="string">"red"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义"改变宽高"的函数</span></span><br><span class="line">btns[<span class="number">1</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    txt.style.width = <span class="string">"800px"</span>;</span><br><span class="line">    txt.style.height = <span class="string">"300px"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义"隐藏内容"的函数</span></span><br><span class="line">btns[<span class="number">2</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    txt.style.display = <span class="string">"none"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义"显示内容"的函数</span></span><br><span class="line">btns[<span class="number">3</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    txt.style.display = <span class="string">"block"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义"取消设置"的函数</span></span><br><span class="line">btns[<span class="number">4</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(confirm(<span class="string">"是否取消设置"</span>))&#123;</span><br><span class="line">        txt.removeAttribute(<span class="string">"style"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -547,12 +643,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/前端/node学习笔记-day1/">node学习笔记-day1</a></p>
+  <p><span>本文标题:</span><a href="/前端/js基础/">js基础</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 jiaqi 的个人博客">jiaqi</a></p>
-  <p><span>发布时间:</span>2019年01月14日 - 19:48</p>
-  <p><span>最后更新:</span>2019年01月14日 - 22:24</p>
-  <p><span>原始链接:</span><a href="/前端/node学习笔记-day1/" title="node学习笔记-day1">https://jiaaaaaqi.github.io/前端/node学习笔记-day1/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiaaaaaqi.github.io/前端/node学习笔记-day1/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月18日 - 14:13</p>
+  <p><span>最后更新:</span>2019年01月18日 - 14:24</p>
+  <p><span>原始链接:</span><a href="/前端/js基础/" title="js基础">https://jiaaaaaqi.github.io/前端/js基础/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiaaaaaqi.github.io/前端/js基础/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -587,7 +683,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/node/" rel="tag"># node</a>
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
           
         </div>
       
@@ -615,8 +711,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/随笔/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/前端/node学习笔记-day1/" rel="next" title="node学习笔记-day1">
+                <i class="fa fa-chevron-left"></i> node学习笔记-day1
               </a>
             
           </div>
@@ -625,8 +721,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/前端/js基础/" rel="prev" title="js基础">
-                js基础 <i class="fa fa-chevron-right"></i>
+              <a href="/前端/Bootstrap/" rel="prev" title="Bootstrap">
+                Bootstrap <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -764,7 +860,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Node-js"><span class="nav-number">1.</span> <span class="nav-text">Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node适合用来做什么"><span class="nav-number">1.2.</span> <span class="nav-text">node适合用来做什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启用服务器"><span class="nav-number">1.3.</span> <span class="nav-text">启用服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项："><span class="nav-number">1.3.1.</span> <span class="nav-text">注意事项：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node没有文件夹的概念"><span class="nav-number">1.4.</span> <span class="nav-text">node没有文件夹的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP模块"><span class="nav-number">1.5.</span> <span class="nav-text">HTTP模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">1.5.1.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意："><span class="nav-number">1.5.2.</span> <span class="nav-text">注意：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#URL模块"><span class="nav-number">1.6.</span> <span class="nav-text">URL模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fs模块"><span class="nav-number">1.7.</span> <span class="nav-text">fs模块</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#js-常用互动方法"><span class="nav-number">1.</span> <span class="nav-text">js-常用互动方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#confirm-确认框"><span class="nav-number">1.1.</span> <span class="nav-text">confirm 确认框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#prompt消息对话框"><span class="nav-number">1.2.</span> <span class="nav-text">prompt消息对话框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开新窗口（window-open）"><span class="nav-number">1.3.</span> <span class="nav-text">打开新窗口（window.open）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#参数表"><span class="nav-number">1.3.1.</span> <span class="nav-text">参数表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭新窗口（window-close）"><span class="nav-number">1.4.</span> <span class="nav-text">关闭新窗口（window.close）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#综合练习"><span class="nav-number">1.5.</span> <span class="nav-text">综合练习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#任务"><span class="nav-number">1.5.1.</span> <span class="nav-text">任务</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#js-DOM操作"><span class="nav-number">2.</span> <span class="nav-text">js-DOM操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是DOM"><span class="nav-number">2.1.</span> <span class="nav-text">什么是DOM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过id获取元素"><span class="nav-number">2.2.</span> <span class="nav-text">通过id获取元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#innerHTML属性"><span class="nav-number">2.3.</span> <span class="nav-text">innerHTML属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改变HTML样式"><span class="nav-number">2.4.</span> <span class="nav-text">改变HTML样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用属性表（property）"><span class="nav-number">2.4.1.</span> <span class="nav-text">常用属性表（property）:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js改变class"><span class="nav-number">2.5.</span> <span class="nav-text">js改变class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#综合实践-根据提示补全代码"><span class="nav-number">2.6.</span> <span class="nav-text">综合实践-根据提示补全代码</span></a></li></ol></li></ol></div>
             
 
           </div>
